@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            font-family: italian, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0e0000;
+            padding: 2px 40px; /* Aumentato il padding per una barra di navigazione più grande */
+            margin-top: 20px; /* Margine per spingere la barra di navigazione verso il basso */
+        }
+        .navbar .logo {
+            height: 100px; /* Dimensioni del logo aumentate */
+            width: auto; /* Mantieni le proporzioni */
+        }
+        .navbar a {
+            color: white;
+            text-align: center;
+            padding: 0px 20px;
+            text-decoration: none;
+            display: block;
+            font-size: 20px; /* Dimensione del font aumentata */
+            margin: 0 5px; /* Margine ridotto per meno spazio tra i link */
+        }
+        .navbar a:hover {
+            color: rgb(51, 250, 51);
+        }
+        .navbar .nav-links {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            margin-left: 400px; /* Regolato per spostare i link di navigazione a destra */
+        }
+        .navbar .contact-us {
+            background: linear-gradient(45deg, #0bc22a, #0e0000);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s;
+            font-size: 20px; /* Dimensione del font aumentata per il pulsante Contattaci */
+        }
+        .navbar .contact-us:hover {
+            background: linear-gradient(45deg, #0e0000, #0bc22a);
+            color: rgb(55, 239, 55);
+        }
+        .content-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+            color: white;
+        }
+        .text {
+            width: 300%;
+            text-align: left;
+            margin-bottom: 300px; /* Regola questo valore per spostare il testo verso l'alto o il basso */
+        }
+
+
+        .buttons-container {
+    display: flex;
+    justify-content: space-between; /* Adjust this property to your desired button spacing */
+    width: 540px; /* Same width as the text container */
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.buttons-container a {
+   
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+.buttons-container a:hover {
+   
+    color: rgb(55, 239, 55);
+}
+
+        .image-container {
+            position: relative; /* Ensure relative positioning for absolute positioning */
+            width: 100%; /* Set width to fill container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .overlay-image {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Adjust the width as needed */
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: auto;
+    z-index: 1;
+}
+.base-image {
+            position: relative; /* Ensure relative positioning for z-index to work */
+            height: auto; /* Maintain aspect ratio */
+            z-index: 0; /* Ensure base image is below overlay */
+            width: 100%; /* Adjust the width as needed */
+            max-width: 100%; /* Ensure the image does not exceed its container */
+        }
+
+
+
+        .bottom-left-image {
+            position: absolute;
+            bottom: 10;
+            left:100px;
+            width: 660px; /* Adjust width as needed */
+            height: 300px;
+            display: block;
+            margin: 20px; /* Adjust margin as needed */
+        }
+
+
+
+        .image1 {
+            width: 300px;
+            height: 350px;
+            left: 10px; /* Adjust the left position for each image */
+        }
+
+        .image2 {
+            width: 200px;
+            height: 180px;
+            left: 370px; /* Adjust the left position for each image */
+        }
+
+        .image3 {
+            width: 200px;
+            height: 180px;
+            left: 670px; /* Adjust the left position for each image */
+        }
+
+        .image4 {
+            width: 400px;
+            height: 160px;
+            left: 990px; /* Adjust the left position for each image */
+        }
+
+      
+
+
+       
+          .form-input {
+                padding: 5px 10px;
+                height: 30%;
+                width: 85%;
+            }
+
+           .btn-subscribe {
+                position: relative;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 30%;
+                width: 40%;
+                padding: 5px 10px;
+                margin-top: 10px;
+                font-size: 20px; 
+                color: rgb(255, 255, 255);
+                background-color: rgb(3, 177, 3); 
+            }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="Mask Group.png" alt="Logo" class="logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#save">Save</a>
+            <a href="ok.html">Travel</a>
+            <a href="#experience">Experience</a>
+            <a href="#wallet">Wallet</a>
+        </div>
+        <a href="#contact" class="contact-us">Contact Us</a>
+    </div>
+    <div class="content-container">
+        <div class="text">
+            <h1 style="font-family: Nunito Sans; font-size: 54px; font-weight: 900; line-height: 73.66px; letter-spacing: 0.04em; text-align: left;">
+                <span style="color: rgb(3, 186, 3);">SAVING</span> YOUR MONEY FOR TRAVEL THROUGH TRAVEL FUND
+            </h1>
+            
+            <p style="font-family: Nunito Sans;font-size: 24px;font-weight: 700;line-height: 32.74px;text-align: left;width: 540px;height: 99px;">Save your money for travel securely and explore the whole world with trasave, we provide you the best travel services.</p>
+            <!-- Aggiungi altro contenuto se necessario -->
+            <div class="buttons-container">
+                <a href="#button1"><img src="Frame 1 (1).png" ></a>
+                <a href="#button2"><img src="Frame 40 (1).png" alt="Button 2"></a>
+            </div>
+        </div>
+        
+        <div class="image">
+                <img src="Group 10.png" alt="Descrizione immagine">
+            </div>
+            
+    </div>
+    <img src="Frame 13.png" alt="Descrizione immagine" style="width: Hug (1,128px)px ; height: Hug (201px)px;top: 1129px; left: 191px; gap: 28px; opacity: 0px; display: block; margin: 0 auto;">
+    <img src="Frame 23.png" alt="Descrizione immagine" style="width: Hug (1,128px)px ; height: Hug (201px)px;top: 1129px; left: 191px; gap: 28px; opacity: 0px; display: block; margin: 0 auto;">
+    <div class="image-container">
+        <img src="Group 111.jpg" alt="Base image" class="base-image">
+        <img src="Frame 32.png" alt="Overlay image" class="overlay-image">
+    </div>
+    <img src="Frame 40 (2).png" class="bottom-left-image image1">
+    <img src="Frame 16.png" class="bottom-left-image image2">
+    <img src="Frame 15.png" class="bottom-left-image image3">
+ 
+
+        <form action="" class="bottom-left-image image4">
+            <input type="email" placeholder="Enter your email" class="form-input">
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+   
+</body>
+</html>
